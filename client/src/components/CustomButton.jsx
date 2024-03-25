@@ -1,4 +1,4 @@
-const CustomButton = ( btnType, title, handleClick, styles) => {
+const CustomButton = ({ btnType, title, handleClick, styles }) => {
   return (
     <button
       type={btnType}

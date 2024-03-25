@@ -1,7 +1,9 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
+import { DisplayCampaigns } from '../components';
+import { useStateContext } from '../context'
 
-const useStateContext = lazy(() => import('../context'));
-const DisplayCampaigns = lazy(() => import('../components'));
+// const useStateContext = lazy(() => import('../context'));
+// const DisplayCampaigns = lazy(() => import('../components'));
 
 const Profile = () => {
   const [isLoading, setIsLoading] = useState(false);
